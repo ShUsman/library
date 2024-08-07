@@ -22,8 +22,8 @@ function createBookCards(book, index) {
     const pages = document.createElement('h3');
     const status = document.createElement('h3');
 
-    const removeBook = document.createElement('button')
-    removeBook.textContent = 'Remove'
+    const removeBook = document.createElement('button');
+    removeBook.textContent = 'Remove';
 
     removeBook.addEventListener('click', () => {
         books.splice(index, 1)
@@ -60,6 +60,7 @@ addBookButton.addEventListener('click', () => {
 
 // Закрытие модального окна при клике вне его
 window.addEventListener('click', (event) => {
+    console.log(event.target);
     if (event.target === modal) {
         modal.style.display = 'none';
     }

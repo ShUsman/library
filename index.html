@@ -17,20 +17,22 @@
         <div id="bookList" class="book-list"></div>
     </main>
     <div id="modal" class="modal">
-        <span class="close">&times;</span>
-        <form class="modal-input">
-            <h2>Add your book</h2>
-            <input type="text" id="bookName" class="title" placeholder="Title">
-            <input type="text" id="bookAuthor" class="author" placeholder="Author">
-            <input type="number" id="bookPages" class="pages" placeholder="Pages">
-            <div class="read-check">
-                <label for="read">Have you read it?</label>
-                <input type="checkbox" id="bookCheck" name="read" id="read">
-            </div>
-            <div class="submit">
-                <button type="button" class="modal-submit">Submit</button>
-            </div>
-        </form>
+        <div class="modal-content">
+            <form class="modal-input">
+                <span class="close">&times;</span>
+                <h2>Add your book</h2>
+                <input type="text" id="bookName" class="title" placeholder="Title">
+                <input type="text" id="bookAuthor" class="author" placeholder="Author">
+                <input type="number" id="bookPages" class="pages" placeholder="Pages">
+                <div class="read-check">
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" id="bookCheck" name="read" id="read">
+                </div>
+                <div class="submit">
+                    <button type="button" class="modal-submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
